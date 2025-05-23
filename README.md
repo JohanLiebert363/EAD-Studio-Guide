@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Be an Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            background-image: url("stone.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .container {
+            animation: fadeIn 1s ease-in-out forwards;
+            height: 70vh;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: darkred;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: #fff6f6;
+            font-size: 1.2em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h1 {
+            color: #ffecec;
+            animation: both 1s ease-in-out;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2em;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-size: 1.2em;
+            font-family: 'Courier New', Courier, monospace;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+        a:hover {
+            background-color: #0056b3;
+            transform: scale(1.2);
+        }
+        p {
+            color: #fff6f6;
+            font-size: 1.2em;
+            animation: fadeIn 1s ease-in-out forwards;
+            text-align: left;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes both {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+        function openTwoPages() {
+            window.open("A.E page 2.html", "_blank");
+            
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>How to Be an Engineer</h1>
+        <a href="#" onclick="openTwoPages()">Start the Tutorial</a>
+    </div>
+    <div class="container">
+        <p>Simple guide for architects and programmers</p>
+        <p>How to be an engineer</p>
+        <p>Backend and frontend development</p>
+        <p>Architect guide</p>
+        <h4>For FREE</h4>
+    </div>
+</body>
+</html>
